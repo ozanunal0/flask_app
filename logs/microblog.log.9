@@ -1,4 +1,4 @@
-2021-08-22 22:26:59,092 ERROR: Exception on /index [GET] [in /Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/flask/app.py:1454]
+2021-09-04 23:19:12,089 ERROR: Exception on /index [GET] [in /Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/flask/app.py:1454]
 Traceback (most recent call last):
   File "/Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
     response = self.full_dispatch_request()
@@ -10,7 +10,7 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
   File "/Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "/Users/ozanunal/Desktop/Python/flask_app/app/routes.py", line 41, in index
+  File "/Users/ozanunal/Desktop/Python/flask_app/app/routes.py", line 31, in index
     return render_template("index.html", title='Home Page', form=form,
   File "/Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
     ctx.app.jinja_env.get_or_select_template(template_name_or_list),
@@ -29,7 +29,7 @@ Traceback (most recent call last):
   File "/Users/ozanunal/Desktop/Python/flask_app/app/templates/index.html", line 24, in template
     {% endfor %}
 jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endfor'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
-2021-08-22 22:28:07,583 ERROR: Exception on /index [GET] [in /Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/flask/app.py:1454]
+2021-09-04 23:19:27,805 ERROR: Exception on /index [GET] [in /Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/flask/app.py:1454]
 Traceback (most recent call last):
   File "/Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
     response = self.full_dispatch_request()
@@ -41,7 +41,7 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
   File "/Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "/Users/ozanunal/Desktop/Python/flask_app/app/routes.py", line 41, in index
+  File "/Users/ozanunal/Desktop/Python/flask_app/app/routes.py", line 31, in index
     return render_template("index.html", title='Home Page', form=form,
   File "/Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
     ctx.app.jinja_env.get_or_select_template(template_name_or_list),
@@ -57,10 +57,10 @@ Traceback (most recent call last):
     self.handle_exception(source=source_hint)
   File "/Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
     raise rewrite_traceback_stack(source=source)
-  File "/Users/ozanunal/Desktop/Python/flask_app/app/templates/index.html", line 25, in template
+  File "/Users/ozanunal/Desktop/Python/flask_app/app/templates/index.html", line 24, in template
     {% endfor %}
 jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endfor'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
-2021-08-22 22:28:08,967 ERROR: Exception on /explore [GET] [in /Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/flask/app.py:1454]
+2021-09-04 23:19:30,567 ERROR: Exception on /explore [GET] [in /Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/flask/app.py:1454]
 Traceback (most recent call last):
   File "/Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
     response = self.full_dispatch_request()
@@ -72,7 +72,7 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
   File "/Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "/Users/ozanunal/Desktop/Python/flask_app/app/routes.py", line 150, in explore
+  File "/Users/ozanunal/Desktop/Python/flask_app/app/routes.py", line 140, in explore
     return render_template('index.html', title='Explore', posts=posts)
   File "/Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
     ctx.app.jinja_env.get_or_select_template(template_name_or_list),
@@ -88,6 +88,6 @@ Traceback (most recent call last):
     self.handle_exception(source=source_hint)
   File "/Users/ozanunal/Desktop/Python/flask_app/flaskwork/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
     raise rewrite_traceback_stack(source=source)
-  File "/Users/ozanunal/Desktop/Python/flask_app/app/templates/index.html", line 25, in template
+  File "/Users/ozanunal/Desktop/Python/flask_app/app/templates/index.html", line 24, in template
     {% endfor %}
 jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endfor'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
