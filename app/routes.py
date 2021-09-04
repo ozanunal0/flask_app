@@ -17,6 +17,7 @@ from app.forms import PostForm
 from app.models import Post
 from flask import request
 
+
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 @login_required
